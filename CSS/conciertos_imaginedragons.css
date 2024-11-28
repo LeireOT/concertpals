@@ -1,0 +1,203 @@
+/*INICIO ESTILO COMÚN TODA LA WEB*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/*Estilo común para el encabezado*/
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    border-radius: 0 0 10px 10px;
+}
+
+h1 {
+    font-size: 50px;
+    margin-left: 20px;
+    font-family:Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h2 {
+    font-family:Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:lightseagreen;
+    margin-bottom: 12px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin-right: 20px;
+    margin-top: 30px;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family:Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+nav ul li a:hover {
+    color: #ffec3d;
+}
+
+/* Estilo para el pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: left;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    border-radius: 10px 10px 0 0;
+    font-size: 12px;
+}
+
+footer .redes_sociales {
+    margin-top: 10px;
+    text-align: right;
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+}
+
+footer .redes_sociales a:hover {
+    color: #ffec3d;
+}
+
+/*Contenedor de las secciones principales*/
+main {
+    margin-top: 120px;
+    padding: 20px;
+}
+
+/*Estilo para los iconos de redes sociales*/
+.redes_sociales {
+    position: fixed;
+    bottom: 3px;
+    right: 20px;
+    z-index: 1000;   /*Asegura que los iconos se mantengan encima de otros elementos */
+}
+
+.redes_sociales a {
+    display: inline-block; /*Hace que los enlaces sean bloques, para que estén alineados verticalmente */
+    margin-bottom: 10px;
+    margin-right: 15px;
+}
+
+.redes_sociales img {
+    width: 20px;
+    height: 20px;
+
+    }
+
+.redes_sociales a:hover img {
+    transform: scale(1.2); /*Agranda un poco el icono cuando el cursor pasa por encima*/
+}
+
+/*FIN ESTILO COMÚN*/
+
+/* Ficha de cada concierto */
+.ficha_concierto {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos de los bloques dentro de la ficha */
+.ficha_concierto {
+    justify-content: space-between; /* Espacio entre los bloques */
+    align-items: center;
+    background-color: #f9f9f9; /* Fondo para hacer más visible la ficha */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave alrededor de la ficha */
+}
+
+.bloque img {
+    width: 130%;
+    border-radius: 8px;
+}
+
+/*Bloque con la fecha del concierto*/
+.fecha_concierto {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+/*Bloque con el lugar del concierto y botones*/
+.lugar_concierto {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/*Estilo para el botón*/
+button {
+    background-color:#ff4d4d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+button:hover {
+    background-color: #ffec3d;
+}
+
+/* Estilo de la imagen */
+.bloque_foto img {
+    width: auto; /* Mantiene las proporciones de la imagen */
+    height: 200px; /* Ajusta la altura de la imagen, puedes modificarla según lo necesites */
+    width: 280px;
+    object-fit: cover; /* Asegura que la imagen se recorte correctamente */
+}
+
+/* Estilo del botón FORO */
+.bloque_foro button {
+    background-color:cornflowerblue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100px; /* Ajusta el ancho según lo necesites */
+    height: 200px; /* Hace que el botón tenga la misma altura que la imagen */
+    font-size: 1.2em; /* Tamaño de fuente adecuado */
+}
+
+/* Estilo para cuando se pasa el mouse sobre el botón */
+.bloque_foro button:hover {
+    background-color: #ffec3d;
+}

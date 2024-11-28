@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Concert Pals</title>
+    <link rel="stylesheet" href="../CSS/contacto_style.css">
+</head>
+<body>
+
+    <!--Encabezado con el título y botones-->
+    <header>
+        <h1>Concert Pals</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="quienes_somos.html">Quiénes somos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Contenido principal-->
+    <main>
+        <div class="contenido">
+            <!--Columna izquierda con mensaje-->
+            <div class="columna_izquierda">
+                <h2>¡Contáctanos!</h2>
+                <p>Para cualquier duda o consulta, por favor, escribe tu mensaje en el formulario y te responderemos a la mayor brevedad.</p>
+                <p>¡Gracias!</p>
+            </div>
+
+            <!--Columna derecha con formulario-->
+            <div class="columna_derecha">
+                <form action="mailto:loteiza@birt.eus" method="get">
+                    <input type="text" name="nombre" placeholder="Nombre" required>
+                    <input type="email" name="correo" placeholder="Dirección de correo" required>
+                    <input type="text" name="titulo" placeholder="Título del mensaje" required>
+                    <textarea name="mensaje" rows="5" placeholder="Mensaje" required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!--Pie de página-->
+    <footer>
+        <p>&copy; 2024 Autoría y licencias: Página web realizada por Leire Oteiza con fines educativos. Todos los derechos de las imágenes están reservados y pertenecen a sus autores.</p>
+        <div class="redes_sociales">
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="../multimedia/insta_logo.png" alt="Instagram" />
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+                <img src="../multimedia/X_ logo.png" alt="Twitter" />
+            </a>
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="../multimedia/fb_logo.png" alt="Facebook" />
+            </a>
+        </div>
+    </footer>
+
+</body>
+</html>
